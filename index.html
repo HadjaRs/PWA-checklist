@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="img/img.png">
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js')
+      .then(() => console.log('PWA Registrado!'))
+      .catch((err) => console.log('Erro no PWA:', err));
+  }
+</script>
+</head>
+<body>
+    <div class="fundo">
+        <div class="conteiner">
+            <div class="tito">
+                <h1>O que vamos fazer hoje?</h1>
+            </div>
+            <div class="infos">
+                <input type="text" id="entrada" placeholder="o que quer fazer?">
+                <button id="add" onclick="adicionar()">Adicionar</button>
+            </div>
+
+            <ul id="lista">
+
+            </ul>
+            <button id="limpar" onclick="limpar()">Limpar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

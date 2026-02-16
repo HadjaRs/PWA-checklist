@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+body{
+    min-height: 100vh;
+    background: #b559d9;
+    background: linear-gradient(186deg, rgba(181, 89, 217, 1) 0%, rgba(189, 60, 157, 1) 50%, rgba(166, 3, 117, 1) 99%);
+    background-attachment: fixed
+}
+
+.fundo{
+    
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+.conteiner{
+    width: 26rem;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;  
+    flex-direction: column;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    box-shadow: 0px 2px 15px 10px rgb(49, 0, 49);
+    
+}
+
+.tito{
+    padding: 25px;
+    background-color:#B559D9 ;
+    border-radius: 20px 20px 0 0;
+    text-align: center;
+}
+
+.tito h1{
+    text-shadow: 2px 1px 10px;
+    color: rgb(24, 9, 16);
+}
+
+.infos{
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+    
+}
+
+.infos input, #add{
+    padding: 20px;
+    border: none;
+    
+    font-size: 18px;
+}
+
+#entrada::placeholder{
+    color: rgb(78, 78, 78);
+    opacity: 1;
+}
+
+.infos input{
+    border-radius: 8px 0 0 8px;
+    background-color: #9b9a9b;
+}
+
+.infos #add{
+    border-radius: 0 8px 8px 0;
+    background-color: #B559D9;
+    cursor: pointer;
+}
+
+#lista{
+    list-style: none;
+    width: 12rem;
+    margin: auto;
+    font-size: 18px;
+}
+
+.feito{
+    text-decoration: line-through;
+    font-weight: bold;
+    color: rgb(82, 0, 85);
+    transition: all 0.4s ease-in-out;
+}
+.feito:hover{
+    transform: translateY(-3px);
+}
+
+#lista li{
+    background-color:#B559D9 ;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#limpar{
+   width: 10rem;
+   padding: 10px;
+   margin: auto;
+   border-radius: 8px;
+   margin-top: 20px;
+   margin-bottom: 25px;
+    cursor: pointer;
+    background-color: #b559d9;
+    border: none;
+    box-shadow: 0px 4px 8px black;
+    font-size: 15px;
+    transition: all 0.5s ease-in-out
+}
+
+#limpar:hover{
+    transform: translateY(-3px);
+}
+
+@media (max-width: 760px){
+    .conteiner{
+        width: 80%;
+        
+        
+    }
+
+    #entrada{
+        width: 80%;
+        font-size: 15px;
+        height: 57px;
+        
+    }
+
+    #add{
+        height: 57px;
+    }
+}
+
